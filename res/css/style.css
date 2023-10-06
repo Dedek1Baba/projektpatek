@@ -1,0 +1,48 @@
+/* 
+
+./ daná složka kde se soubor nachází
+../ o jednu složku zpět
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+  font-family: 'VT323', monospace;
+  user-select: none;
+}
+
+body {
+  background-image: url("../img/background.gif");
+  background-size: cover;
+}
+
+#wrapper {
+  display: table;
+  margin: 0 auto;
+  margin-top: 7em;
+}
+
+#cookie {
+  max-width: 130px;
+  width: 100%;
+  display: table;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+#cookie:hover {
+  transform: scale(1.6);
+}
+
+#counter {
+  font-size: 42px;
+  text-align: center;
+  color: white;
+  transition: .2s ease;
+  cursor: pointer;
+}
+
+#counter:hover {
+  transform: scale(1.1);
+}
