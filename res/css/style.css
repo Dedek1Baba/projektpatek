@@ -5,10 +5,11 @@
 }
 
 body {
-  background-image: url("../img/bw.jpg");
+  background-image: url("../img/sand.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
+  background-position: center;
+  background-attachment: fixed;
 }
 
 h1 {
