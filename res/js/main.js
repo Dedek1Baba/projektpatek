@@ -12,7 +12,7 @@ const picture = document.getElementById("picture");
 const picture2 = document.getElementById("picture2");
 const picture3 = document.getElementById("picture3");
  
-// Počet sušenek
+// Počet jordanu
 let NumberOfCookies = 0;
  
 // Cena vylepšení

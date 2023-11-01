@@ -1,42 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 * {
-  font-family: 'VT323', monospace;
-  user-select: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
 }
 
 body {
-  background-image: url("../img/background.gif");
-  background-size: cover;
+  height: 960px;
 }
 
-#wrapper {
-  display: table;
-  margin: 0 auto;
-  margin-top: 7em;
+#body {
+  display: flex;
+}
+
+.cookie-side, .factory {
+  flex-basis: 40%;
+  height: 960px;
+}
+
+.cookie-store {
+  flex-basis: 20%;
+  height: 960px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  padding-top: 60px;
+}
+
+h2 {
+  color: black;
+  font-size: 25px;
+  padding-top: 20px;
 }
 
 #cookie {
-  max-width: 130px;
-  width: 100%;
-  display: table;
-  margin: 0 auto;
-  cursor: pointer;
-  transition: .3s ease;
+  width: 300px;
+  height: 300px;
+  margin-top: 100px;
 }
 
 #cookie:hover {
-  transform: scale(1.6);
-}
-
-#counter {
-  font-size: 42px;
-  text-align: center;
-  color: white;
-  transition: .2s ease;
   cursor: pointer;
 }
 
-#counter:hover {
+#cookie:active {
   transform: scale(1.1);
+}
+
+.cookie-side {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 960px;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button {
+  width: 100%;
+  height: 20%;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(255, 212, 70);
+  border-left: 3px solid black;
+}
+
+.button:hover {
+  background-color: gray;
+}
+
+.first, .second, .third {
+  height: 320px;
+  border: 3px solid black;
+}
+
+.first, .second, .third{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.lock {
+  margin-top: 5px;
+}
+
+.factory {
+  height: 960px;
 }
