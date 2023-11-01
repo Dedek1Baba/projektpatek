@@ -1,33 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-* {
-  box-sizing: border-box;
+* { 
   padding: 0;
   margin: 0;
   font-family: sans-serif;
 }
 
 body {
-  height: 960px;
+
+  background-image: url("../img/jordanbox.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-#body {
-  display: flex;
+.jordan-side {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.cookie-side, .factory {
-  flex-basis: 40%;
-  height: 960px;
+.shop {
+  height: 200px;
 }
 
-.cookie-store {
-  flex-basis: 20%;
-  height: 960px;
+.button {
+  display: block;
+  width: 20%;
+  height: 30%;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-bottom-left-radius: 10px ;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
-body {
-  width: 100%;
-  height: 100%;
+.button:hover {
+  background-color: rgb(128, 128, 128);
 }
 
 h1 {
@@ -45,58 +57,16 @@ h2 {
   padding-top: 20px;
 }
 
-#cookie {
+#jordan4 {
   width: 300px;
   height: 300px;
   margin-top: 100px;
 }
 
-#cookie:hover {
+#jordan4:hover {
   cursor: pointer;
 }
 
-#cookie:active {
+#jordan4:active {
   transform: scale(1.1);
-}
-
-.cookie-side {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  height: 960px;
-  background-image: url("../img/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.button {
-  width: 100%;
-  height: 20%;
-  font-size: 20px;
-  font-weight: bold;
-  background-color: rgb(255, 212, 70);
-  border-left: 3px solid black;
-}
-
-.button:hover {
-  background-color: gray;
-}
-
-.first, .second, .third {
-  height: 320px;
-  border: 3px solid black;
-}
-
-.first, .second, .third{
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.lock {
-  margin-top: 5px;
-}
-
-.factory {
-  height: 960px;
 }

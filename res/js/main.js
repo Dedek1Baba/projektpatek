@@ -1,19 +1,14 @@
-const cookie = document.getElementById("cookie").addEventListener("click", Count);
+const jordan4 = document.getElementById("jordan4").addEventListener("click", Count);
 const counter = document.getElementById("counter");
 const upgrade1 = document.getElementById("upgrade1");
 const upgrade2 = document.getElementById("upgrade2");
 const upgrade3 = document.getElementById("upgrade3");
 const upgrade4 = document.getElementById("upgrade4");
-const upgrade5 = document.getElementById("upgrade5");
 const first = document.getElementById("first");
 const second = document.getElementById("second");
-const third = document.getElementById("third");
-const picture = document.getElementById("picture");
-const picture2 = document.getElementById("picture2");
-const picture3 = document.getElementById("picture3");
  
 // Počet jordanu
-let NumberOfCookies = 0;
+let NumberOfJordan = 0;
  
 // Cena vylepšení
 let UpgradeCost = 25;
@@ -33,7 +28,7 @@ let AutoclickIncrease = 0;
 upgrade1.innerText = "Buy grandma: " + UpgradeCost;
 upgrade1.addEventListener("click", Upgrader1);
  
-upgrade2.innerText = "Buy grandpa: " + UpgradeCost2;
+upgrade2.innerText = "Buy New Laces: " + UpgradeCost2;
 upgrade2.addEventListener("click", Upgrader2);
  
 upgrade3.innerText = "Buy first farm: " + AutoclickCost;
@@ -42,55 +37,44 @@ upgrade3.addEventListener("click", AutoclickUpgrade1);
 upgrade4.innerText = "Buy second farm: " + AutoclickCost2;
 upgrade4.addEventListener("click", AutoclickUpgrade2);
  
-upgrade5.innerText = "Buy third farm: " + AutoclickCost3;
-upgrade5.addEventListener("click", AutoclickUpgrade3);
  
 function Count() {
-    NumberOfCookies += UpgradedCount;
-    counter.innerText = "Cookies: " + NumberOfCookies;
+    NumberOfJordan += UpgradedCount;
+    counter.innerText = "Jordan: " + NumberOfJordan;
 }
  
 function Upgrader1() {
-    if (NumberOfCookies >= UpgradeCost) {
-        NumberOfCookies -= UpgradeCost;
+    if (NumberOfJordan >= UpgradeCost) {
+        NumberOfJordan -= UpgradeCost;
         UpgradeCost *= 2;
         UpgradedCount += 5;
-        counter.innerText = "Cookies: " + NumberOfCookies;
-        upgrade1.innerText = "Upgrade grandma: " + UpgradeCost;
+        counter.innerText = "Jordan: " + NumberOfJordan;
+        upgrade1.innerText = "Upgrade Cleaner: " + UpgradeCost;
     }
 }
  
 function Upgrader2() {
-    if (NumberOfCookies >= UpgradeCost) {
-        NumberOfCookies -= UpgradeCost;
+    if (NumberOfJordan >= UpgradeCost) {
+        NumberOfJordan -= UpgradeCost;
         UpgradeCost2 *= 2;
         UpgradedCount += 10;
-        counter.innerText = "Cookies: " + NumberOfCookies;
-        upgrade2.innerText = "Upgrade grandma: " + UpgradeCost2;
+        counter.innerText = "Jordan: " + NumberOfJordan;
+        upgrade2.innerText = "New Laces: " + UpgradeCost2;
     }
  
 }
  
 function AutoclickUpgrade1() {
-    if (NumberOfCookies >= AutoclickCost) {
-        NumberOfCookies -= AutoclickCost;
+    if (NumberOfJordan >= AutoclickCost) {
+        NumberOfJordan -= AutoclickCost;
         AutoclickCost *= 2;
-        counter.innerText = "Cookies: " + NumberOfCookies;
-        upgrade3.innerText = "Upgrade first farm: " + AutoclickCost;
-        picture.src="./res/img/firstbackground.png";
-        picture.style.backgroundSize = "cover";
-        picture.style.backgroundRepeat = "no-repeat";
-        picture.style.margin = "0";
-        picture.style.width = "100%";
-        picture.style.height = "320px";
-        first.style.borderRight = "none";
-        first.style.borderTop = "none";
-        first.style.borderBottom = "none";
+        counter.innerText = "Jordan: " + NumberOfJordan;
+        upgrade3.innerText = "Upgrade Box Farm: " + AutoclickCost;
  
         if(AutoclickIncrease === 0) {
             setInterval(() => {
-                NumberOfCookies += AutoclickIncrease;
-                counter.innerText = "Cookies: " + NumberOfCookies;
+                NumberOfJordan += AutoclickIncrease;
+                counter.innerText = "Jordan: " + NumberOfJordan;
             }, 1000)
         }
         AutoclickIncrease += 1;
@@ -98,51 +82,18 @@ function AutoclickUpgrade1() {
 }
  
 function AutoclickUpgrade2() {
-    if (NumberOfCookies >= AutoclickCost2) {
-        NumberOfCookies -= AutoclickCost2;
+    if (NumberOfJordan >= AutoclickCost2) {
+        NumberOfJordan -= AutoclickCost2;
         AutoclickCost2 *= 2;
-        counter.innerText = "Cookies: " + NumberOfCookies;
-        upgrade4.innerText = "Upgrade second farm: " + AutoclickCost2;
-        picture2.src="./res/img/secondbackground.jpg";
-        picture2.style.backgroundSize = "cover";  
-        picture2.style.backgroundRepeat = "no-repeat";
-        picture2.style.margin = "0";
-        picture2.style.width = "100%";
-        picture2.style.height = "320px";
-        second.style.borderRight = "none";
-        second.style.borderTop = "none";
+        counter.innerText = "Jordan: " + NumberOfJordan;
+        upgrade4.innerText = "Upgrade Jordan Farm: " + AutoclickCost2;
  
         if(AutoclickIncrease === 0) {
             setInterval(() => {
-                NumberOfCookies += AutoclickIncrease;
-                counter.innerText = "Cookies: " + NumberOfCookies;
+                NumberOfJordan += AutoclickIncrease;
+                counter.innerText = "Jordan: " + NumberOfJordan;
             }, 1000)
         }
         AutoclickIncrease += 5;
-    }
-}
- 
-function AutoclickUpgrade3() {
-    if (NumberOfCookies >= AutoclickCost3) {
-        NumberOfCookies -= AutoclickCost3;
-        AutoclickCost3 *= 2;
-        counter.innerText = "Cookies: " + NumberOfCookies;
-        upgrade5.innerText = "Upgrade third farm: " + AutoclickCost3;
-        picture3.src="./res/img/thirdbackground.jpg";
-        picture3.style.backgroundSize = "cover";
-        picture3.style.backgroundRepeat = "no-repeat";
-        picture3.style.width = "100%";
-        picture3.style.height = "313px";
-        third.style.borderRight = "none";
-        third.style.borderBottom = "none";
-        third.style.borderTop = "none";
- 
-        if(AutoclickIncrease === 0) {
-            setInterval(() => {
-                NumberOfCookies += AutoclickIncrease;
-                counter.innerText = "Cookies: " + NumberOfCookies;
-            }, 1000)
-        }
-        AutoclickIncrease += 10;
     }
 }
