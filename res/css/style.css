@@ -7,11 +7,10 @@
 }
 
 body {
-
-  background-image: url("../img/jordanbox.jpg");
+  background-image: url("../img/bw.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-attachment: fixed;
 }
 
 .jordan-side {
@@ -21,14 +20,15 @@ body {
 }
 
 .shop {
+  width: 550px;
   height: 200px;
 }
 
 .button {
-  display: block;
+  display: inline-block;
   width: 20%;
-  height: 30%;
-  font-size: 18px;
+  height: 40%;
+  font-size: 16px;
   font-weight: bold;
   background-color: whitesmoke;
   border: 2px solid black;
@@ -47,12 +47,12 @@ h1 {
   font-weight: bold;
   text-align: center;
   justify-content: center;
-  color: black;
+  color: rgb(255, 255, 255);
   padding-top: 60px;
 }
 
 h2 {
-  color: black;
+  color: rgb(150, 150, 150);
   font-size: 25px;
   padding-top: 20px;
 }

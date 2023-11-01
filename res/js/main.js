@@ -4,8 +4,6 @@ const upgrade1 = document.getElementById("upgrade1");
 const upgrade2 = document.getElementById("upgrade2");
 const upgrade3 = document.getElementById("upgrade3");
 const upgrade4 = document.getElementById("upgrade4");
-const first = document.getElementById("first");
-const second = document.getElementById("second");
  
 // Počet jordanu
 let NumberOfJordan = 0;
@@ -25,16 +23,16 @@ let AutoclickCost3 = 1600;
 // Automatické navyšování
 let AutoclickIncrease = 0;
  
-upgrade1.innerText = "Buy grandma: " + UpgradeCost;
+upgrade1.innerText = "Buy Cleaner: " + UpgradeCost;
 upgrade1.addEventListener("click", Upgrader1);
  
 upgrade2.innerText = "Buy New Laces: " + UpgradeCost2;
 upgrade2.addEventListener("click", Upgrader2);
  
-upgrade3.innerText = "Buy first farm: " + AutoclickCost;
+upgrade3.innerText = "Buy Box Farm: " + AutoclickCost;
 upgrade3.addEventListener("click", AutoclickUpgrade1);
  
-upgrade4.innerText = "Buy second farm: " + AutoclickCost2;
+upgrade4.innerText = "Buy Jordan Farm: " + AutoclickCost2;
 upgrade4.addEventListener("click", AutoclickUpgrade2);
  
  
