@@ -4,7 +4,7 @@ const upgrade1 = document.getElementById("upgrade1");
 const upgrade2 = document.getElementById("upgrade2");
 const clicker1 = document.getElementById("clicker1");
 const clicker2 = document.getElementById("clicker2");
- 
+
 let NumberOfJordan = 0;
 let UpgradePrice = 25;
 let UpgradePrice2 = 200;

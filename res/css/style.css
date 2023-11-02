@@ -43,7 +43,8 @@ h2 {
   width: 190px;
   height: 90px;
   font-size: 14px;
-  background-color: whitesmoke;
+  background-color: black;
+  color: whitesmoke;
   border: 2px solid black;
   border-bottom-left-radius: 10px ;
   border-bottom-right-radius: 10px;
@@ -52,17 +53,7 @@ h2 {
 }
 
 .button:hover {
-  background-color: gray;
-  color: whitesmoke;
-}
-
-#clicker1, #clicker2 {
-  background-color: rgb(0, 0, 0);
-  color: whitesmoke;
-}
-
-#clicker1:hover, #clicker2:hover {
-  background-color: gray;
+  background-color: whitesmoke;
   color: black;
 }
 
